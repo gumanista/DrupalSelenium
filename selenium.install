@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function selenium_install() {
+  // Added to allow running of hook_uninstall.
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function selenium_uninstall() {
+  variable_del('selenium_server_host');
+}
